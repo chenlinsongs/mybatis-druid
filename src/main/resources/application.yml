@@ -1,0 +1,10 @@
+jdbc:
+  type: mysql
+  driver: com.mysql.cj.jdbc.Driver
+  url: jdbc:mysql://192.168.31.100:13306/thorough?useSSL=false&useUnicode=true&characterEncoding=utf-8
+  username: root
+  password: 3t8mmC87XP6J
+  testSql: SELECT 'x' FROM DUAL
+
+server:
+  port: 8080
