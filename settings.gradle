@@ -1,1 +1,3 @@
 rootProject.name = 'mybatis-druid'
+include 'web'
+

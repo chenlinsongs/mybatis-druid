@@ -55,7 +55,7 @@ public class DynamicMapperSqlSessionBean extends SqlSessionFactoryBean {
     }
 
     private List<Resource> getEntityMapperResource(){
-        Reflections reflections = new Reflections("com.thorough.mybatis");
+        Reflections reflections = new Reflections("com.thorough.*");
         Set<Class<?>> annotated = reflections.getTypesAnnotatedWith(MyBatisDao.class);
         List<Resource> resources = new ArrayList<>();
         if (annotated !=null && annotated.size() > 0){
